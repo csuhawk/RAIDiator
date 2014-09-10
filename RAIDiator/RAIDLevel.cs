@@ -49,6 +49,6 @@ namespace RAIDiator
         /// Calculates how many HDD-Space is usable
         /// </summary>
         /// <returns></returns>
-        abstract public double calcUsableDiskSpace();
+        abstract public double calcUsableDiskSpace(int numberOfDisks, double sizeOfSingleDisk);
     }
 }

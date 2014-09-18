@@ -27,7 +27,7 @@ namespace RAIDiator
         // Is called when the CMBBox selction is changed
         private void cmbRAIDLevels_SelectedIndexChanged(object sender, EventArgs e)
         {
-            int minHDD;
+            int minHDD = 0;
             switch (cmbRAIDLevels.SelectedItem.ToString())
             {
                 default:
@@ -36,44 +36,36 @@ namespace RAIDiator
                 case "RAID-0":
                     // Sets required Disks and current value of cmbox to the same number
                     minHDD = RAIDLevel.RAIDLevels.Find(item => item.Name == "RAID-0").MinHDD;
-                    numUpDoNumberOfDisks.Minimum = minHDD;
-                    numUpDoNumberOfDisks.Value = minHDD;
                     break;
 
                 case "RAID-1":
                     // Sets required Disks and current value of cmbox to the same number
                     minHDD = RAIDLevel.RAIDLevels.Find(item => item.Name == "RAID-1").MinHDD;
-                    numUpDoNumberOfDisks.Minimum = minHDD;
-                    numUpDoNumberOfDisks.Value = minHDD;
                     break;
                 case "RAID-3":
                     // Sets required Disks and current value of cmbox to the same number
                     minHDD = RAIDLevel.RAIDLevels.Find(item => item.Name == "RAID-3").MinHDD;
-                    numUpDoNumberOfDisks.Minimum = minHDD;
-                    numUpDoNumberOfDisks.Value = minHDD;
                     break;
 
                 case "RAID-5":
                     // Sets required Disks and current value of cmbox to the same number
                     minHDD = RAIDLevel.RAIDLevels.Find(item => item.Name == "RAID-5").MinHDD;
-                    numUpDoNumberOfDisks.Minimum = minHDD;
-                    numUpDoNumberOfDisks.Value = minHDD;
                     break;
 
                 case "RAID-6":
                     // Sets required Disks and current value of cmbox to the same number
                     minHDD = RAIDLevel.RAIDLevels.Find(item => item.Name == "RAID-6").MinHDD;
-                    numUpDoNumberOfDisks.Minimum = minHDD;
-                    numUpDoNumberOfDisks.Value = minHDD;
                     break;
 
                 case "RAID10":
                     // Sets required Disks and current value of cmbox to the same number
                     minHDD = RAIDLevel.RAIDLevels.Find(item => item.Name == "RAID-10").MinHDD;
-                    numUpDoNumberOfDisks.Minimum = minHDD;
-                    numUpDoNumberOfDisks.Value = minHDD;
                     break;
             }
+
+            // Sets minimal HDD 
+            numUpDoNumberOfDisks.Minimum = minHDD;
+            numUpDoNumberOfDisks.Value = minHDD;
         }
 
         // Calculates the usable Space of the current Configuration

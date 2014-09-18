@@ -6,3 +6,4 @@ P:\Project_Data\RAIDiator\RAIDiator\obj\Debug\RAIDiator.csproj.GenerateResource.
 P:\Project_Data\RAIDiator\RAIDiator\obj\Debug\RAIDiator.exe
 P:\Project_Data\RAIDiator\RAIDiator\obj\Debug\RAIDiator.pdb
 P:\Project_Data\RAIDiator\RAIDiator\obj\Debug\RAIDiator.Form1.resources
+P:\Project_Data\RAIDiator\RAIDiator\obj\Debug\RAIDiator.csprojResolveAssemblyReference.cache

@@ -18,13 +18,14 @@ namespace RAIDiator
 
             RAIDLevel.initAllRAIDLevels();
 
+            // Add all RAID Levels from List to cmbBox
             foreach (RAIDLevel currentRAIDLevel in RAIDLevel.RAIDLevels)
             {
                 cmbRAIDLevels.Items.Add(currentRAIDLevel);
             }   
         }
 
-        // Is called when the CMBBox selction is changed
+        // Is called when the cmBox selction is changed
         private void cmbRAIDLevels_SelectedIndexChanged(object sender, EventArgs e)
         {
             int minHDD = 0;
@@ -57,7 +58,7 @@ namespace RAIDiator
                     minHDD = RAIDLevel.RAIDLevels.Find(item => item.Name == "RAID-6").MinHDD;
                     break;
 
-                case "RAID10":
+                case "RAID-10":
                     // Sets required Disks and current value of cmbox to the same number
                     minHDD = RAIDLevel.RAIDLevels.Find(item => item.Name == "RAID-10").MinHDD;
                     break;

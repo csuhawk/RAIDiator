@@ -103,7 +103,7 @@ namespace RAIDiator
                         txtUsableSpace.Text = RAIDLevel.RAIDLevels.Find(item => item.Name == "RAID-6").calcUsableDiskSpace(Convert.ToInt16(numUpDoNumberOfDisks.Value), Convert.ToDouble(numUpDoDiskSize.Value)).ToString();
                    
                         break;
-                    case "RAID10":
+                    case "RAID-10":
                         // Sets required Disks and current value of cmbox to the same number
                         txtUsableSpace.Text = RAIDLevel.RAIDLevels.Find(item => item.Name == "RAID-10").calcUsableDiskSpace(Convert.ToInt16(numUpDoNumberOfDisks.Value), Convert.ToDouble(numUpDoDiskSize.Value)).ToString();
                     

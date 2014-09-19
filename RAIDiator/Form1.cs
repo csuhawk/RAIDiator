@@ -43,6 +43,7 @@ namespace RAIDiator
                     // Sets required Disks and current value of cmbox to the same number
                     minHDD = RAIDLevel.RAIDLevels.Find(item => item.Name == "RAID-1").MinHDD;
                     break;
+
                 case "RAID-3":
                     // Sets required Disks and current value of cmbox to the same number
                     minHDD = RAIDLevel.RAIDLevels.Find(item => item.Name == "RAID-3").MinHDD;
@@ -78,35 +79,35 @@ namespace RAIDiator
                 {
                     default:
                         break;
+
                     case "RAID-0":
                         // Sets required Disks and current value of cmbox to the same number
                         txtUsableSpace.Text = RAIDLevel.RAIDLevels.Find(item => item.Name == "RAID-0").calcUsableDiskSpace(Convert.ToInt16(numUpDoNumberOfDisks.Value),Convert.ToDouble(numUpDoDiskSize.Value)).ToString();
-
                         break;
+
                     case "RAID-1":
                         // Sets required Disks and current value of cmbox to the same number
                         txtUsableSpace.Text = RAIDLevel.RAIDLevels.Find(item => item.Name == "RAID-1").calcUsableDiskSpace(Convert.ToInt16(numUpDoNumberOfDisks.Value), Convert.ToDouble(numUpDoDiskSize.Value)).ToString();
-                    
                         break;
+
                     case "RAID-3":
                         // Sets required Disks and current value of cmbox to the same number
                         txtUsableSpace.Text = RAIDLevel.RAIDLevels.Find(item => item.Name == "RAID-3").calcUsableDiskSpace(Convert.ToInt16(numUpDoNumberOfDisks.Value), Convert.ToDouble(numUpDoDiskSize.Value)).ToString();
-                   
                         break;
+
                     case "RAID-5":
                         // Sets required Disks and current value of cmbox to the same number
                         txtUsableSpace.Text = RAIDLevel.RAIDLevels.Find(item => item.Name == "RAID-5").calcUsableDiskSpace(Convert.ToInt16(numUpDoNumberOfDisks.Value), Convert.ToDouble(numUpDoDiskSize.Value)).ToString();
-                    
                         break;
+
                     case "RAID-6":
                         // Sets required Disks and current value of cmbox to the same number
                         txtUsableSpace.Text = RAIDLevel.RAIDLevels.Find(item => item.Name == "RAID-6").calcUsableDiskSpace(Convert.ToInt16(numUpDoNumberOfDisks.Value), Convert.ToDouble(numUpDoDiskSize.Value)).ToString();
-                   
                         break;
+
                     case "RAID-10":
                         // Sets required Disks and current value of cmbox to the same number
                         txtUsableSpace.Text = RAIDLevel.RAIDLevels.Find(item => item.Name == "RAID-10").calcUsableDiskSpace(Convert.ToInt16(numUpDoNumberOfDisks.Value), Convert.ToDouble(numUpDoDiskSize.Value)).ToString();
-                    
                         break;
                 }
             }

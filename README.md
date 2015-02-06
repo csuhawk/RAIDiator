@@ -1,4 +1,4 @@
 RAIDiator
 =========
 
-A simple Programm to Calculate HDD-Sapce usage with different RAID Levels
+A simple Programm to Calculate HDD-Space usage with different RAID Levels

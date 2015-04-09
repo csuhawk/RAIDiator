@@ -37,31 +37,43 @@ namespace RAIDiator
                 case "RAID-0":
                     // Sets required Disks and current value of cmbox to the same number
                     minHDD = RAIDLevel.RAIDLevels.Find(item => item.Name == "RAID-0").MinHDD;
+                    // Sets Image of RAID Level
+                    pBoxRAIDLevel.Image = RAIDiator.Properties.Resources.RAID0;
                     break;
 
                 case "RAID-1":
                     // Sets required Disks and current value of cmbox to the same number
                     minHDD = RAIDLevel.RAIDLevels.Find(item => item.Name == "RAID-1").MinHDD;
+                    // Sets Image of RAID Level
+                    pBoxRAIDLevel.Image = RAIDiator.Properties.Resources.RAID1;
                     break;
 
                 case "RAID-3":
                     // Sets required Disks and current value of cmbox to the same number
                     minHDD = RAIDLevel.RAIDLevels.Find(item => item.Name == "RAID-3").MinHDD;
+                    // Sets Image of RAID Level
+                    pBoxRAIDLevel.Image = RAIDiator.Properties.Resources.RAID3;
                     break;
 
                 case "RAID-5":
                     // Sets required Disks and current value of cmbox to the same number
                     minHDD = RAIDLevel.RAIDLevels.Find(item => item.Name == "RAID-5").MinHDD;
+                    // Sets Image of RAID Level
+                    pBoxRAIDLevel.Image = RAIDiator.Properties.Resources.RAID5;
                     break;
 
                 case "RAID-6":
                     // Sets required Disks and current value of cmbox to the same number
                     minHDD = RAIDLevel.RAIDLevels.Find(item => item.Name == "RAID-6").MinHDD;
+                    // Sets Image of RAID Level
+                    pBoxRAIDLevel.Image = RAIDiator.Properties.Resources.RAID6;
                     break;
 
                 case "RAID-10":
                     // Sets required Disks and current value of cmbox to the same number
                     minHDD = RAIDLevel.RAIDLevels.Find(item => item.Name == "RAID-10").MinHDD;
+                    // Sets Image of RAID Level
+                    pBoxRAIDLevel.Image = RAIDiator.Properties.Resources.RAID10;
                     break;
             }
 
@@ -111,6 +123,11 @@ namespace RAIDiator
                         break;
                 }
             }
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

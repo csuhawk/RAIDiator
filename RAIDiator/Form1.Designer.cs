@@ -37,8 +37,10 @@
             this.lblUsableSpace = new System.Windows.Forms.Label();
             this.txtUsableSpace = new System.Windows.Forms.TextBox();
             this.btnCalcSpace = new System.Windows.Forms.Button();
+            this.pBoxRAIDLevel = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.numUpDoNumberOfDisks)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numUpDoDiskSize)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pBoxRAIDLevel)).BeginInit();
             this.SuspendLayout();
             // 
             // cmbRAIDLevels
@@ -127,11 +129,21 @@
             this.btnCalcSpace.UseVisualStyleBackColor = true;
             this.btnCalcSpace.Click += new System.EventHandler(this.btnCalcSpace_Click);
             // 
+            // pBoxRAIDLevel
+            // 
+            this.pBoxRAIDLevel.Location = new System.Drawing.Point(242, 10);
+            this.pBoxRAIDLevel.Name = "pBoxRAIDLevel";
+            this.pBoxRAIDLevel.Size = new System.Drawing.Size(169, 127);
+            this.pBoxRAIDLevel.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pBoxRAIDLevel.TabIndex = 10;
+            this.pBoxRAIDLevel.TabStop = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(252, 143);
+            this.ClientSize = new System.Drawing.Size(416, 141);
+            this.Controls.Add(this.pBoxRAIDLevel);
             this.Controls.Add(this.btnCalcSpace);
             this.Controls.Add(this.txtUsableSpace);
             this.Controls.Add(this.lblUsableSpace);
@@ -144,8 +156,10 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "Form1";
             this.Text = "RAIDiator";
+            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.numUpDoNumberOfDisks)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numUpDoDiskSize)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pBoxRAIDLevel)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -162,6 +176,7 @@
         private System.Windows.Forms.Label lblUsableSpace;
         private System.Windows.Forms.TextBox txtUsableSpace;
         private System.Windows.Forms.Button btnCalcSpace;
+        private System.Windows.Forms.PictureBox pBoxRAIDLevel;
 
     }
 }

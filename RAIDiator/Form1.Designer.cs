@@ -31,6 +31,7 @@
             System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
             System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
             System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.cmbRAIDLevels = new System.Windows.Forms.ComboBox();
             this.lblRAIDLevel = new System.Windows.Forms.Label();
             this.lblNumberOfDisks = new System.Windows.Forms.Label();
@@ -237,7 +238,9 @@
             this.Controls.Add(this.lblNumberOfDisks);
             this.Controls.Add(this.lblRAIDLevel);
             this.Controls.Add(this.cmbRAIDLevels);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "Form1";
             this.Text = "RAIDiator";
             ((System.ComponentModel.ISupportInitialize)(this.numUpDoNumberOfDisks)).EndInit();

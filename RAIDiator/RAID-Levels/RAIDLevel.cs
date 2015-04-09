@@ -55,7 +55,11 @@ namespace RAIDiator
         /// </summary>
         /// <returns></returns>
         abstract public double calcUsableDiskSpace(int numberOfDisks, double sizeOfSingleDisk);
-        abstract public double calcUnusableDiskSpace(int numberOfDisks, double sizeOfSingleDisk);
+
+        public double calcUnusableDiskSpace(int numberOfDisks, double sizeOfSingleDisk)
+        {
+            return numberOfDisks * sizeOfSingleDisk - calcUsableDiskSpace(numberOfDisks, sizeOfSingleDisk);
+        }
 
         /// <summary>
         /// Override the toString Methode so that is returns the name of the RAID Level.

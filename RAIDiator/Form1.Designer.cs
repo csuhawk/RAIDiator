@@ -40,7 +40,6 @@
             this.numUpDoDiskSize = new System.Windows.Forms.NumericUpDown();
             this.lblUsableSpace = new System.Windows.Forms.Label();
             this.txtUsableSpace = new System.Windows.Forms.TextBox();
-            this.btnCalcSpace = new System.Windows.Forms.Button();
             this.pBoxRAIDLevel = new System.Windows.Forms.PictureBox();
             this.lblUnusableSpace = new System.Windows.Forms.Label();
             this.txtUnusableSpace = new System.Windows.Forms.TextBox();
@@ -48,6 +47,7 @@
             this.lblGBDiskSize = new System.Windows.Forms.Label();
             this.lblGBUsableSpace = new System.Windows.Forms.Label();
             this.lblGBUnusableSpace = new System.Windows.Forms.Label();
+            this.btnAbout = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.numUpDoNumberOfDisks)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numUpDoDiskSize)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pBoxRAIDLevel)).BeginInit();
@@ -88,6 +88,7 @@
             this.numUpDoNumberOfDisks.Name = "numUpDoNumberOfDisks";
             this.numUpDoNumberOfDisks.Size = new System.Drawing.Size(120, 20);
             this.numUpDoNumberOfDisks.TabIndex = 3;
+            this.numUpDoNumberOfDisks.ValueChanged += new System.EventHandler(this.numUpDoNumberOfDisks_ValueChanged);
             // 
             // lblDiskSize
             // 
@@ -110,11 +111,12 @@
             this.numUpDoDiskSize.Name = "numUpDoDiskSize";
             this.numUpDoDiskSize.Size = new System.Drawing.Size(85, 20);
             this.numUpDoDiskSize.TabIndex = 5;
+            this.numUpDoDiskSize.ValueChanged += new System.EventHandler(this.numUpDoDiskSize_ValueChanged);
             // 
             // lblUsableSpace
             // 
             this.lblUsableSpace.AutoSize = true;
-            this.lblUsableSpace.Location = new System.Drawing.Point(289, 37);
+            this.lblUsableSpace.Location = new System.Drawing.Point(289, 33);
             this.lblUsableSpace.Name = "lblUsableSpace";
             this.lblUsableSpace.Size = new System.Drawing.Size(98, 13);
             this.lblUsableSpace.TabIndex = 6;
@@ -125,22 +127,11 @@
             this.txtUsableSpace.BackColor = System.Drawing.SystemColors.Info;
             this.txtUsableSpace.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtUsableSpace.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.txtUsableSpace.Location = new System.Drawing.Point(289, 53);
+            this.txtUsableSpace.Location = new System.Drawing.Point(289, 49);
             this.txtUsableSpace.Name = "txtUsableSpace";
             this.txtUsableSpace.ReadOnly = true;
             this.txtUsableSpace.Size = new System.Drawing.Size(120, 20);
             this.txtUsableSpace.TabIndex = 8;
-            // 
-            // btnCalcSpace
-            // 
-            this.btnCalcSpace.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCalcSpace.Location = new System.Drawing.Point(289, 10);
-            this.btnCalcSpace.Name = "btnCalcSpace";
-            this.btnCalcSpace.Size = new System.Drawing.Size(265, 23);
-            this.btnCalcSpace.TabIndex = 9;
-            this.btnCalcSpace.Text = "Calculate Space";
-            this.btnCalcSpace.UseVisualStyleBackColor = true;
-            this.btnCalcSpace.Click += new System.EventHandler(this.btnCalcSpace_Click);
             // 
             // pBoxRAIDLevel
             // 
@@ -154,7 +145,7 @@
             // lblUnusableSpace
             // 
             this.lblUnusableSpace.AutoSize = true;
-            this.lblUnusableSpace.Location = new System.Drawing.Point(289, 76);
+            this.lblUnusableSpace.Location = new System.Drawing.Point(289, 72);
             this.lblUnusableSpace.Name = "lblUnusableSpace";
             this.lblUnusableSpace.Size = new System.Drawing.Size(110, 13);
             this.lblUnusableSpace.TabIndex = 11;
@@ -165,7 +156,7 @@
             this.txtUnusableSpace.BackColor = System.Drawing.SystemColors.Info;
             this.txtUnusableSpace.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtUnusableSpace.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.txtUnusableSpace.Location = new System.Drawing.Point(289, 92);
+            this.txtUnusableSpace.Location = new System.Drawing.Point(289, 88);
             this.txtUnusableSpace.Name = "txtUnusableSpace";
             this.txtUnusableSpace.ReadOnly = true;
             this.txtUnusableSpace.Size = new System.Drawing.Size(120, 20);
@@ -202,7 +193,7 @@
             // lblGBUsableSpace
             // 
             this.lblGBUsableSpace.AutoSize = true;
-            this.lblGBUsableSpace.Location = new System.Drawing.Point(415, 56);
+            this.lblGBUsableSpace.Location = new System.Drawing.Point(415, 52);
             this.lblGBUsableSpace.Name = "lblGBUsableSpace";
             this.lblGBUsableSpace.Size = new System.Drawing.Size(36, 13);
             this.lblGBUsableSpace.TabIndex = 15;
@@ -211,17 +202,28 @@
             // lblGBUnusableSpace
             // 
             this.lblGBUnusableSpace.AutoSize = true;
-            this.lblGBUnusableSpace.Location = new System.Drawing.Point(415, 95);
+            this.lblGBUnusableSpace.Location = new System.Drawing.Point(415, 91);
             this.lblGBUnusableSpace.Name = "lblGBUnusableSpace";
             this.lblGBUnusableSpace.Size = new System.Drawing.Size(36, 13);
             this.lblGBUnusableSpace.TabIndex = 16;
             this.lblGBUnusableSpace.Text = "GByte";
+            // 
+            // btnAbout
+            // 
+            this.btnAbout.Location = new System.Drawing.Point(479, 8);
+            this.btnAbout.Name = "btnAbout";
+            this.btnAbout.Size = new System.Drawing.Size(75, 23);
+            this.btnAbout.TabIndex = 17;
+            this.btnAbout.Text = "About";
+            this.btnAbout.UseVisualStyleBackColor = true;
+            this.btnAbout.Click += new System.EventHandler(this.btnAbout_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(566, 332);
+            this.Controls.Add(this.btnAbout);
             this.Controls.Add(this.lblGBUnusableSpace);
             this.Controls.Add(this.lblGBUsableSpace);
             this.Controls.Add(this.lblGBDiskSize);
@@ -229,7 +231,6 @@
             this.Controls.Add(this.txtUnusableSpace);
             this.Controls.Add(this.lblUnusableSpace);
             this.Controls.Add(this.pBoxRAIDLevel);
-            this.Controls.Add(this.btnCalcSpace);
             this.Controls.Add(this.txtUsableSpace);
             this.Controls.Add(this.lblUsableSpace);
             this.Controls.Add(this.numUpDoDiskSize);
@@ -262,7 +263,6 @@
         private System.Windows.Forms.NumericUpDown numUpDoDiskSize;
         private System.Windows.Forms.Label lblUsableSpace;
         private System.Windows.Forms.TextBox txtUsableSpace;
-        private System.Windows.Forms.Button btnCalcSpace;
         private System.Windows.Forms.PictureBox pBoxRAIDLevel;
         private System.Windows.Forms.Label lblUnusableSpace;
         private System.Windows.Forms.TextBox txtUnusableSpace;
@@ -270,6 +270,7 @@
         private System.Windows.Forms.Label lblGBDiskSize;
         private System.Windows.Forms.Label lblGBUsableSpace;
         private System.Windows.Forms.Label lblGBUnusableSpace;
+        private System.Windows.Forms.Button btnAbout;
 
     }
 }

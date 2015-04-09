@@ -83,11 +83,18 @@ namespace RAIDiator
 
             // Sets minimal HDD 
             numUpDoNumberOfDisks.Minimum = minHDD;
-            numUpDoNumberOfDisks.Value = numUpDoNumberOfDisks.Minimum;
+            if (numUpDoNumberOfDisks.Value < minHDD)
+            {
+                numUpDoNumberOfDisks.Value = numUpDoNumberOfDisks.Minimum;
+            }
+
+            // Recalculate Space
+            calcSpace();
+
         }
 
         // Calculates the usable Space of the current Configuration
-        private void btnCalcSpace_Click(object sender, EventArgs e)
+        private void calcSpace()
         {
             if (cmbRAIDLevels.SelectedIndex > -1)
             {
@@ -106,6 +113,28 @@ namespace RAIDiator
                 SpaceChart.Series.FindByName("UsedVSUnusedSpace").Points[0].LegendText = "Usable";
                 SpaceChart.Series.FindByName("UsedVSUnusedSpace").Points[1].LegendText = "Unusable";
             }
+        }
+
+        private void numUpDoNumberOfDisks_ValueChanged(object sender, EventArgs e)
+        {
+            // Recalculate Space
+            calcSpace();
+        }
+
+        private void numUpDoDiskSize_ValueChanged(object sender, EventArgs e)
+        {
+            // Recalculate Space
+            calcSpace();
+        }
+
+        private void btnAbout_Click(object sender, EventArgs e)
+        {
+            // Show About dialog
+            using(AboutBox1 box = new AboutBox1())
+            {
+                box.ShowDialog(this);
+            }
+
         }
 
     }

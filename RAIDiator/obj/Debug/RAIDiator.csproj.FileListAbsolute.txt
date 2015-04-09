@@ -16,3 +16,8 @@ D:\Project_Data\RAIDiator\RAIDiator\obj\Debug\RAIDiator.Form1.resources
 D:\Project_Data\RAIDiator\RAIDiator\obj\Debug\RAIDiator.Properties.Resources.resources
 D:\Project_Data\RAIDiator\RAIDiator\obj\Debug\RAIDiator.csproj.GenerateResource.Cache
 D:\Project_Data\RAIDiator\RAIDiator\obj\Debug\RAIDiator.csprojResolveAssemblyReference.cache
+D:\Project_Data\RAIDiator\RAIDiator\bin\Debug\RAIDiator.exe.manifest
+D:\Project_Data\RAIDiator\RAIDiator\bin\Debug\RAIDiator.application
+D:\Project_Data\RAIDiator\RAIDiator\obj\Debug\RAIDiator.exe.manifest
+D:\Project_Data\RAIDiator\RAIDiator\obj\Debug\RAIDiator.application
+D:\Project_Data\RAIDiator\RAIDiator\obj\Debug\RAIDiator.AboutBox1.resources

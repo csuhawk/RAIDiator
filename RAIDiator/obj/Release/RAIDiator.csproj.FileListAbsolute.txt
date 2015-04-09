@@ -6,3 +6,8 @@ D:\Project_Data\RAIDiator\RAIDiator\obj\Release\RAIDiator.Properties.Resources.r
 D:\Project_Data\RAIDiator\RAIDiator\obj\Release\RAIDiator.csproj.GenerateResource.Cache
 D:\Project_Data\RAIDiator\RAIDiator\obj\Release\RAIDiator.exe
 D:\Project_Data\RAIDiator\RAIDiator\obj\Release\RAIDiator.pdb
+D:\Project_Data\RAIDiator\RAIDiator\bin\Release\RAIDiator.exe.manifest
+D:\Project_Data\RAIDiator\RAIDiator\bin\Release\RAIDiator.application
+D:\Project_Data\RAIDiator\RAIDiator\obj\Release\RAIDiator.AboutBox1.resources
+D:\Project_Data\RAIDiator\RAIDiator\obj\Release\RAIDiator.exe.manifest
+D:\Project_Data\RAIDiator\RAIDiator\obj\Release\RAIDiator.application

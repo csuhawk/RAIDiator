@@ -16,7 +16,12 @@ namespace RAIDiator
 
         public override double calcUsableDiskSpace(int numberOfDisks, double sizeOfSingleDisk)
         {
-            return (numberOfDisks * sizeOfSingleDisk) / 2;
+            return ((numberOfDisks - numberOfDisks % 2 )* sizeOfSingleDisk) / 2;
+        }
+
+        public override double calcUnusableDiskSpace(int numberOfDisks, double sizeOfSingleDisk)
+        {
+            return ((numberOfDisks % 2) * sizeOfSingleDisk);
         }
     }
 }

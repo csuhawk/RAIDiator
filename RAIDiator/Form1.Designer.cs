@@ -38,6 +38,8 @@
             this.txtUsableSpace = new System.Windows.Forms.TextBox();
             this.btnCalcSpace = new System.Windows.Forms.Button();
             this.pBoxRAIDLevel = new System.Windows.Forms.PictureBox();
+            this.lblUnusableSpace = new System.Windows.Forms.Label();
+            this.txtUnusableSpace = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.numUpDoNumberOfDisks)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numUpDoDiskSize)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pBoxRAIDLevel)).BeginInit();
@@ -103,7 +105,7 @@
             // lblUsableSpace
             // 
             this.lblUsableSpace.AutoSize = true;
-            this.lblUsableSpace.Location = new System.Drawing.Point(13, 120);
+            this.lblUsableSpace.Location = new System.Drawing.Point(2, 120);
             this.lblUsableSpace.Name = "lblUsableSpace";
             this.lblUsableSpace.Size = new System.Drawing.Size(98, 13);
             this.lblUsableSpace.TabIndex = 6;
@@ -111,7 +113,9 @@
             // 
             // txtUsableSpace
             // 
-            this.txtUsableSpace.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtUsableSpace.BackColor = System.Drawing.SystemColors.Info;
+            this.txtUsableSpace.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtUsableSpace.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.txtUsableSpace.Location = new System.Drawing.Point(115, 117);
             this.txtUsableSpace.Name = "txtUsableSpace";
             this.txtUsableSpace.ReadOnly = true;
@@ -138,11 +142,33 @@
             this.pBoxRAIDLevel.TabIndex = 10;
             this.pBoxRAIDLevel.TabStop = false;
             // 
+            // lblUnusableSpace
+            // 
+            this.lblUnusableSpace.AutoSize = true;
+            this.lblUnusableSpace.Location = new System.Drawing.Point(2, 148);
+            this.lblUnusableSpace.Name = "lblUnusableSpace";
+            this.lblUnusableSpace.Size = new System.Drawing.Size(110, 13);
+            this.lblUnusableSpace.TabIndex = 11;
+            this.lblUnusableSpace.Text = "Unusable Disk Space";
+            // 
+            // txtUnusableSpace
+            // 
+            this.txtUnusableSpace.BackColor = System.Drawing.SystemColors.Info;
+            this.txtUnusableSpace.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtUnusableSpace.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.txtUnusableSpace.Location = new System.Drawing.Point(115, 145);
+            this.txtUnusableSpace.Name = "txtUnusableSpace";
+            this.txtUnusableSpace.ReadOnly = true;
+            this.txtUnusableSpace.Size = new System.Drawing.Size(120, 20);
+            this.txtUnusableSpace.TabIndex = 12;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(416, 141);
+            this.ClientSize = new System.Drawing.Size(416, 170);
+            this.Controls.Add(this.txtUnusableSpace);
+            this.Controls.Add(this.lblUnusableSpace);
             this.Controls.Add(this.pBoxRAIDLevel);
             this.Controls.Add(this.btnCalcSpace);
             this.Controls.Add(this.txtUsableSpace);
@@ -156,7 +182,6 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "Form1";
             this.Text = "RAIDiator";
-            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.numUpDoNumberOfDisks)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numUpDoDiskSize)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pBoxRAIDLevel)).EndInit();
@@ -177,6 +202,8 @@
         private System.Windows.Forms.TextBox txtUsableSpace;
         private System.Windows.Forms.Button btnCalcSpace;
         private System.Windows.Forms.PictureBox pBoxRAIDLevel;
+        private System.Windows.Forms.Label lblUnusableSpace;
+        private System.Windows.Forms.TextBox txtUnusableSpace;
 
     }
 }

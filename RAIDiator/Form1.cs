@@ -23,6 +23,9 @@ namespace RAIDiator
             {
                 cmbRAIDLevels.Items.Add(currentRAIDLevel);
             }  
+
+            // Set Default Raid Level0
+            cmbRAIDLevels.SelectedItem = RAIDLevel.RAIDLevels.Find(item => item.Name == "RAID-0");
  
         }
 
@@ -80,7 +83,7 @@ namespace RAIDiator
 
             // Sets minimal HDD 
             numUpDoNumberOfDisks.Minimum = minHDD;
-            numUpDoNumberOfDisks.Value = minHDD;
+            numUpDoNumberOfDisks.Value = numUpDoNumberOfDisks.Minimum;
         }
 
         // Calculates the usable Space of the current Configuration
@@ -92,6 +95,16 @@ namespace RAIDiator
                 // Calc Space
                 txtUsableSpace.Text = RAIDLevel.RAIDLevels.Find(item => item.Name == currentRAIDLevel).calcUsableDiskSpace(Convert.ToInt16(numUpDoNumberOfDisks.Value), Convert.ToDouble(numUpDoDiskSize.Value)).ToString();
                 txtUnusableSpace.Text = RAIDLevel.RAIDLevels.Find(item => item.Name == currentRAIDLevel).calcUnusableDiskSpace(Convert.ToInt16(numUpDoNumberOfDisks.Value), Convert.ToDouble(numUpDoDiskSize.Value)).ToString();
+                // Generate ChartData
+                SpaceChart.Series.FindByName("UsedVSUnusedSpace").Points.Clear();                       // clear DataPoints
+                SpaceChart.Series.FindByName("UsedVSUnusedSpace").Points.AddY(txtUsableSpace.Text);     // Sets usable Space
+                SpaceChart.Series.FindByName("UsedVSUnusedSpace").Points.AddY(txtUnusableSpace.Text);   // Sets unusable space    
+                // Set Color for Datapoints
+                SpaceChart.Series.FindByName("UsedVSUnusedSpace").Points[0].Color = Color.FromArgb(128, 255, 128); //Greenish
+                SpaceChart.Series.FindByName("UsedVSUnusedSpace").Points[1].Color = Color.FromArgb(255, 128, 128); // Redish
+                // Set Legend for Datapoints
+                SpaceChart.Series.FindByName("UsedVSUnusedSpace").Points[0].LegendText = "Usable";
+                SpaceChart.Series.FindByName("UsedVSUnusedSpace").Points[1].LegendText = "Unusable";
             }
         }
 

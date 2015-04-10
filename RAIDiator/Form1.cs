@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Windows.Forms.DataVisualization.Charting;
 
 namespace RAIDiator
 {
@@ -33,53 +34,45 @@ namespace RAIDiator
         private void cmbRAIDLevels_SelectedIndexChanged(object sender, EventArgs e)
         {
             int minHDD = 0;
-            switch (cmbRAIDLevels.SelectedItem.ToString())
+            String rlevelName = cmbRAIDLevels.SelectedItem.ToString();
+            switch (rlevelName)
             {
                 default:
                     break;
 
                 case "RAID-0":
-                    // Sets required Disks and current value of cmbox to the same number
-                    minHDD = RAIDLevel.RAIDLevels.Find(item => item.Name == "RAID-0").MinHDD;
                     // Sets Image of RAID Level
                     pBoxRAIDLevel.Image = RAIDiator.Properties.Resources.RAID0;
                     break;
 
                 case "RAID-1":
-                    // Sets required Disks and current value of cmbox to the same number
-                    minHDD = RAIDLevel.RAIDLevels.Find(item => item.Name == "RAID-1").MinHDD;
                     // Sets Image of RAID Level
                     pBoxRAIDLevel.Image = RAIDiator.Properties.Resources.RAID1;
                     break;
 
                 case "RAID-3":
-                    // Sets required Disks and current value of cmbox to the same number
-                    minHDD = RAIDLevel.RAIDLevels.Find(item => item.Name == "RAID-3").MinHDD;
                     // Sets Image of RAID Level
                     pBoxRAIDLevel.Image = RAIDiator.Properties.Resources.RAID3;
                     break;
 
                 case "RAID-5":
-                    // Sets required Disks and current value of cmbox to the same number
-                    minHDD = RAIDLevel.RAIDLevels.Find(item => item.Name == "RAID-5").MinHDD;
                     // Sets Image of RAID Level
                     pBoxRAIDLevel.Image = RAIDiator.Properties.Resources.RAID5;
                     break;
 
                 case "RAID-6":
-                    // Sets required Disks and current value of cmbox to the same number
-                    minHDD = RAIDLevel.RAIDLevels.Find(item => item.Name == "RAID-6").MinHDD;
                     // Sets Image of RAID Level
                     pBoxRAIDLevel.Image = RAIDiator.Properties.Resources.RAID6;
                     break;
 
                 case "RAID-10":
-                    // Sets required Disks and current value of cmbox to the same number
-                    minHDD = RAIDLevel.RAIDLevels.Find(item => item.Name == "RAID-10").MinHDD;
                     // Sets Image of RAID Level
                     pBoxRAIDLevel.Image = RAIDiator.Properties.Resources.RAID10;
                     break;
             }
+
+            // Sets required Disks and current value of cmbox to the same number
+            minHDD = RAIDLevel.RAIDLevels.Find(item => item.Name == rlevelName).MinHDD;
 
             // Sets minimal HDD 
             numUpDoNumberOfDisks.Minimum = minHDD;
@@ -100,18 +93,20 @@ namespace RAIDiator
             {
                 String currentRAIDLevel = cmbRAIDLevels.SelectedItem.ToString();
                 // Calc Space
-                txtUsableSpace.Text = RAIDLevel.RAIDLevels.Find(item => item.Name == currentRAIDLevel).calcUsableDiskSpace(Convert.ToInt16(numUpDoNumberOfDisks.Value), Convert.ToDouble(numUpDoDiskSize.Value)).ToString();
-                txtUnusableSpace.Text = RAIDLevel.RAIDLevels.Find(item => item.Name == currentRAIDLevel).calcUnusableDiskSpace(Convert.ToInt16(numUpDoNumberOfDisks.Value), Convert.ToDouble(numUpDoDiskSize.Value)).ToString();
+                RAIDLevel rlevel = RAIDLevel.RAIDLevels.Find(item => item.Name == currentRAIDLevel);
+                txtUsableSpace.Text = rlevel.calcUsableDiskSpace(Convert.ToInt16(numUpDoNumberOfDisks.Value), Convert.ToDouble(numUpDoDiskSize.Value)).ToString();
+                txtUnusableSpace.Text = rlevel.calcUnusableDiskSpace(Convert.ToInt16(numUpDoNumberOfDisks.Value), Convert.ToDouble(numUpDoDiskSize.Value)).ToString();
                 // Generate ChartData
-                SpaceChart.Series.FindByName("UsedVSUnusedSpace").Points.Clear();                       // clear DataPoints
-                SpaceChart.Series.FindByName("UsedVSUnusedSpace").Points.AddY(txtUsableSpace.Text);     // Sets usable Space
-                SpaceChart.Series.FindByName("UsedVSUnusedSpace").Points.AddY(txtUnusableSpace.Text);   // Sets unusable space    
+                Series ser = SpaceChart.Series.FindByName("UsedVSUnusedSpace");
+                ser.Points.Clear();                       // clear DataPoints
+                ser.Points.AddY(txtUsableSpace.Text);     // Sets usable Space
+                ser.Points.AddY(txtUnusableSpace.Text);   // Sets unusable space    
                 // Set Color for Datapoints
-                SpaceChart.Series.FindByName("UsedVSUnusedSpace").Points[0].Color = Color.FromArgb(128, 255, 128); //Greenish
-                SpaceChart.Series.FindByName("UsedVSUnusedSpace").Points[1].Color = Color.FromArgb(255, 128, 128); // Redish
+                ser.Points[0].Color = Color.FromArgb(128, 255, 128); //Greenish
+                ser.Points[1].Color = Color.FromArgb(255, 128, 128); // Redish
                 // Set Legend for Datapoints
-                SpaceChart.Series.FindByName("UsedVSUnusedSpace").Points[0].LegendText = "Usable";
-                SpaceChart.Series.FindByName("UsedVSUnusedSpace").Points[1].LegendText = "Unusable";
+                ser.Points[0].LegendText = "Usable";
+                ser.Points[1].LegendText = "Unusable";
             }
         }
 

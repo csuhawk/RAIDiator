@@ -43,14 +43,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="RAIDiator.exe" size="1077248">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="RAIDiator.exe" size="1076224">
       <assemblyIdentity name="RAIDiator" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>mZGZsixWG68OXxNlD5LDshb8isLFqPJVyAG7kFJ+fo8=</dsig:DigestValue>
+        <dsig:DigestValue>nfSePnGq6MgMPOB4JBzQzmJ48Hr+7ieTR/zcamYFNZQ=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

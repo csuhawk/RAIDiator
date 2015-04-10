@@ -3,4 +3,4 @@ RAIDiator
 
 A simple Programm to Calculate HDD-Space usage with different RAID Levels
 
-More Infos at: http://jcambass.github.io/RAIDiator/ 
+For more infos visit: http://jcambass.github.io/RAIDiator/ 

@@ -1,0 +1,151 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="file:///C:/PROGRAM FILES (X86)/MICROSOFT VISUAL STUDIO 12.0/COMMON7/IDE/EXTENSIONS/MICROSOFT/ARCHITECTURE TOOLS/EXTENSIBILITY/Logging/ReverseEngineeringLog.xslt"?>
+<Log xmlns="http://schemas.microsoft.com/VisualStudio/2010/CodeGen.RE.Log" Label="Code Generation/Text Transformation Log">
+  <MessageClass Name="Message" Label="Message" Option="Show informational messages" />
+  <MessageClass Name="Warning" Label="Warning" Option="Show warnings" />
+  <MessageClass Name="Error" Label="Error" Option="Show errors" />
+  <MessageClass Name="Property" Label="Property" Option="Show metadata" />
+  <MessageClass Name="Diagnostic" Label="Message" Option="Show diagnostic messages" />
+  <Message Timestamp="2015-04-17T18:41:31" Importance="High" Text="Reverse Engineering Started." />
+  <Message Timestamp="2015-04-17T18:41:40" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'b1b89f50-3494-407e-98e9-d167d45da570' -  (ClassifierTemplateParameter)" />
+  <Message Timestamp="2015-04-17T18:41:40" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'Boolean' -  (PrimitiveType)" />
+  <Message Timestamp="2015-04-17T18:41:40" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'Integer' -  (PrimitiveType)" />
+  <Message Timestamp="2015-04-17T18:41:40" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'myModellingProcess::RAIDiator' -  (Package)" />
+  <Message Timestamp="2015-04-17T18:41:40" Importance="Medium" Text="Element reverse engineered into the UML model: 'myModellingProcess::RAIDiator::AboutBox1' -  (Class)" />
+  <Message Timestamp="2015-04-17T18:41:40" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'myModellingProcess::RAIDiator::AboutBox1::AboutBox1' -  (Operation)" />
+  <Message Timestamp="2015-04-17T18:41:40" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'myModellingProcess::RAIDiator::AboutBox1::AssemblyCompany' -  (Property)" />
+  <Message Timestamp="2015-04-17T18:41:40" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'myModellingProcess::RAIDiator::AboutBox1::AssemblyCopyright' -  (Property)" />
+  <Message Timestamp="2015-04-17T18:41:40" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'myModellingProcess::RAIDiator::AboutBox1::AssemblyDescription' -  (Property)" />
+  <Message Timestamp="2015-04-17T18:41:40" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'myModellingProcess::RAIDiator::AboutBox1::AssemblyProduct' -  (Property)" />
+  <Message Timestamp="2015-04-17T18:41:40" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'myModellingProcess::RAIDiator::AboutBox1::AssemblyTitle' -  (Property)" />
+  <Message Timestamp="2015-04-17T18:41:40" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'myModellingProcess::RAIDiator::AboutBox1::AssemblyVersion' -  (Property)" />
+  <Message Timestamp="2015-04-17T18:41:40" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'myModellingProcess::RAIDiator::AboutBox1::components' -  (Property)" />
+  <Message Timestamp="2015-04-17T18:41:40" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'myModellingProcess::RAIDiator::AboutBox1::Dispose' -  (Operation)" />
+  <Message Timestamp="2015-04-17T18:41:40" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'myModellingProcess::RAIDiator::AboutBox1::Dispose::disposing' -  (Parameter)" />
+  <Message Timestamp="2015-04-17T18:41:40" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'myModellingProcess::RAIDiator::AboutBox1::InitializeComponent' -  (Operation)" />
+  <Message Timestamp="2015-04-17T18:41:40" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'myModellingProcess::RAIDiator::AboutBox1::labelCompanyName' -  (Property)" />
+  <Message Timestamp="2015-04-17T18:41:40" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'myModellingProcess::RAIDiator::AboutBox1::labelCopyright' -  (Property)" />
+  <Message Timestamp="2015-04-17T18:41:40" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'myModellingProcess::RAIDiator::AboutBox1::labelProductName' -  (Property)" />
+  <Message Timestamp="2015-04-17T18:41:40" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'myModellingProcess::RAIDiator::AboutBox1::labelVersion' -  (Property)" />
+  <Message Timestamp="2015-04-17T18:41:40" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'myModellingProcess::RAIDiator::AboutBox1::logoPictureBox' -  (Property)" />
+  <Message Timestamp="2015-04-17T18:41:40" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'myModellingProcess::RAIDiator::AboutBox1::okButton' -  (Property)" />
+  <Message Timestamp="2015-04-17T18:41:40" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'myModellingProcess::RAIDiator::AboutBox1::tableLayoutPanel' -  (Property)" />
+  <Message Timestamp="2015-04-17T18:41:40" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'myModellingProcess::RAIDiator::AboutBox1::textBoxDescription' -  (Property)" />
+  <Message Timestamp="2015-04-17T18:41:40" Importance="Medium" Text="Element reverse engineered into the UML model: 'myModellingProcess::RAIDiator::Form1' -  (Class)" />
+  <Message Timestamp="2015-04-17T18:41:40" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'myModellingProcess::RAIDiator::Form1::btnAbout' -  (Property)" />
+  <Message Timestamp="2015-04-17T18:41:40" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'myModellingProcess::RAIDiator::Form1::btnAbout_Click' -  (Operation)" />
+  <Message Timestamp="2015-04-17T18:41:40" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'myModellingProcess::RAIDiator::Form1::btnAbout_Click::e' -  (Parameter)" />
+  <Message Timestamp="2015-04-17T18:41:40" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'myModellingProcess::RAIDiator::Form1::btnAbout_Click::sender' -  (Parameter)" />
+  <Message Timestamp="2015-04-17T18:41:40" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'myModellingProcess::RAIDiator::Form1::calcSpace' -  (Operation)" />
+  <Message Timestamp="2015-04-17T18:41:40" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'myModellingProcess::RAIDiator::Form1::cmbRAIDLevels' -  (Property)" />
+  <Message Timestamp="2015-04-17T18:41:40" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'myModellingProcess::RAIDiator::Form1::cmbRAIDLevels_SelectedIndexChanged' -  (Operation)" />
+  <Message Timestamp="2015-04-17T18:41:40" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'myModellingProcess::RAIDiator::Form1::cmbRAIDLevels_SelectedIndexChanged::e' -  (Parameter)" />
+  <Message Timestamp="2015-04-17T18:41:40" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'myModellingProcess::RAIDiator::Form1::cmbRAIDLevels_SelectedIndexChanged::sender' -  (Parameter)" />
+  <Message Timestamp="2015-04-17T18:41:40" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'myModellingProcess::RAIDiator::Form1::components' -  (Property)" />
+  <Message Timestamp="2015-04-17T18:41:40" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'myModellingProcess::RAIDiator::Form1::Dispose' -  (Operation)" />
+  <Message Timestamp="2015-04-17T18:41:40" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'myModellingProcess::RAIDiator::Form1::Dispose::disposing' -  (Parameter)" />
+  <Message Timestamp="2015-04-17T18:41:40" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'myModellingProcess::RAIDiator::Form1::Form1' -  (Operation)" />
+  <Message Timestamp="2015-04-17T18:41:40" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'myModellingProcess::RAIDiator::Form1::InitializeComponent' -  (Operation)" />
+  <Message Timestamp="2015-04-17T18:41:40" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'myModellingProcess::RAIDiator::Form1::lblDiskSize' -  (Property)" />
+  <Message Timestamp="2015-04-17T18:41:40" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'myModellingProcess::RAIDiator::Form1::lblGBDiskSize' -  (Property)" />
+  <Message Timestamp="2015-04-17T18:41:40" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'myModellingProcess::RAIDiator::Form1::lblGBUnusableSpace' -  (Property)" />
+  <Message Timestamp="2015-04-17T18:41:40" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'myModellingProcess::RAIDiator::Form1::lblGBUsableSpace' -  (Property)" />
+  <Message Timestamp="2015-04-17T18:41:40" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'myModellingProcess::RAIDiator::Form1::lblNumberOfDisks' -  (Property)" />
+  <Message Timestamp="2015-04-17T18:41:40" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'myModellingProcess::RAIDiator::Form1::lblRAIDLevel' -  (Property)" />
+  <Message Timestamp="2015-04-17T18:41:40" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'myModellingProcess::RAIDiator::Form1::lblUnusableSpace' -  (Property)" />
+  <Message Timestamp="2015-04-17T18:41:40" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'myModellingProcess::RAIDiator::Form1::lblUsableSpace' -  (Property)" />
+  <Message Timestamp="2015-04-17T18:41:40" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'myModellingProcess::RAIDiator::Form1::numUpDoDiskSize' -  (Property)" />
+  <Message Timestamp="2015-04-17T18:41:40" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'myModellingProcess::RAIDiator::Form1::numUpDoDiskSize_ValueChanged' -  (Operation)" />
+  <Message Timestamp="2015-04-17T18:41:40" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'myModellingProcess::RAIDiator::Form1::numUpDoDiskSize_ValueChanged::e' -  (Parameter)" />
+  <Message Timestamp="2015-04-17T18:41:40" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'myModellingProcess::RAIDiator::Form1::numUpDoDiskSize_ValueChanged::sender' -  (Parameter)" />
+  <Message Timestamp="2015-04-17T18:41:40" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'myModellingProcess::RAIDiator::Form1::numUpDoNumberOfDisks' -  (Property)" />
+  <Message Timestamp="2015-04-17T18:41:40" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'myModellingProcess::RAIDiator::Form1::numUpDoNumberOfDisks_ValueChanged' -  (Operation)" />
+  <Message Timestamp="2015-04-17T18:41:40" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'myModellingProcess::RAIDiator::Form1::numUpDoNumberOfDisks_ValueChanged::e' -  (Parameter)" />
+  <Message Timestamp="2015-04-17T18:41:40" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'myModellingProcess::RAIDiator::Form1::numUpDoNumberOfDisks_ValueChanged::sender' -  (Parameter)" />
+  <Message Timestamp="2015-04-17T18:41:40" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'myModellingProcess::RAIDiator::Form1::pBoxRAIDLevel' -  (Property)" />
+  <Message Timestamp="2015-04-17T18:41:40" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'myModellingProcess::RAIDiator::Form1::SpaceChart' -  (Property)" />
+  <Message Timestamp="2015-04-17T18:41:40" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'myModellingProcess::RAIDiator::Form1::txtUnusableSpace' -  (Property)" />
+  <Message Timestamp="2015-04-17T18:41:40" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'myModellingProcess::RAIDiator::Form1::txtUsableSpace' -  (Property)" />
+  <Message Timestamp="2015-04-17T18:41:40" Importance="Medium" Text="Element reverse engineered into the UML model: 'myModellingProcess::RAIDiator::Program' -  (Class)" />
+  <Message Timestamp="2015-04-17T18:41:40" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'myModellingProcess::RAIDiator::Program::Main' -  (Operation)" />
+  <Message Timestamp="2015-04-17T18:41:40" Importance="Medium" Text="Element reverse engineered into the UML model: 'myModellingProcess::RAIDiator::RAID0' -  (Class)" />
+  <Message Timestamp="2015-04-17T18:41:40" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'myModellingProcess::RAIDiator::RAID0::calcUsableDiskSpace' -  (Operation)" />
+  <Message Timestamp="2015-04-17T18:41:40" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'myModellingProcess::RAIDiator::RAID0::calcUsableDiskSpace::numberOfDisks' -  (Parameter)" />
+  <Message Timestamp="2015-04-17T18:41:40" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'myModellingProcess::RAIDiator::RAID0::calcUsableDiskSpace::sizeOfSingleDisk' -  (Parameter)" />
+  <Message Timestamp="2015-04-17T18:41:40" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'myModellingProcess::RAIDiator::RAID0::RAID0' -  (Operation)" />
+  <Message Timestamp="2015-04-17T18:41:40" Importance="Medium" Text="Element reverse engineered into the UML model: 'myModellingProcess::RAIDiator::RAID1' -  (Class)" />
+  <Message Timestamp="2015-04-17T18:41:40" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'myModellingProcess::RAIDiator::RAID1::calcUsableDiskSpace' -  (Operation)" />
+  <Message Timestamp="2015-04-17T18:41:40" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'myModellingProcess::RAIDiator::RAID1::calcUsableDiskSpace::numberOfDisks' -  (Parameter)" />
+  <Message Timestamp="2015-04-17T18:41:40" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'myModellingProcess::RAIDiator::RAID1::calcUsableDiskSpace::sizeOfSingleDisk' -  (Parameter)" />
+  <Message Timestamp="2015-04-17T18:41:40" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'myModellingProcess::RAIDiator::RAID1::RAID1' -  (Operation)" />
+  <Message Timestamp="2015-04-17T18:41:40" Importance="Medium" Text="Element reverse engineered into the UML model: 'myModellingProcess::RAIDiator::RAID10' -  (Class)" />
+  <Message Timestamp="2015-04-17T18:41:40" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'myModellingProcess::RAIDiator::RAID10::calcUsableDiskSpace' -  (Operation)" />
+  <Message Timestamp="2015-04-17T18:41:40" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'myModellingProcess::RAIDiator::RAID10::calcUsableDiskSpace::numberOfDisks' -  (Parameter)" />
+  <Message Timestamp="2015-04-17T18:41:40" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'myModellingProcess::RAIDiator::RAID10::calcUsableDiskSpace::sizeOfSingleDisk' -  (Parameter)" />
+  <Message Timestamp="2015-04-17T18:41:40" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'myModellingProcess::RAIDiator::RAID10::RAID10' -  (Operation)" />
+  <Message Timestamp="2015-04-17T18:41:40" Importance="Medium" Text="Element reverse engineered into the UML model: 'myModellingProcess::RAIDiator::RAID3' -  (Class)" />
+  <Message Timestamp="2015-04-17T18:41:40" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'myModellingProcess::RAIDiator::RAID3::calcUsableDiskSpace' -  (Operation)" />
+  <Message Timestamp="2015-04-17T18:41:40" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'myModellingProcess::RAIDiator::RAID3::calcUsableDiskSpace::numberOfDisks' -  (Parameter)" />
+  <Message Timestamp="2015-04-17T18:41:40" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'myModellingProcess::RAIDiator::RAID3::calcUsableDiskSpace::sizeOfSingleDisk' -  (Parameter)" />
+  <Message Timestamp="2015-04-17T18:41:40" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'myModellingProcess::RAIDiator::RAID3::RAID3' -  (Operation)" />
+  <Message Timestamp="2015-04-17T18:41:40" Importance="Medium" Text="Element reverse engineered into the UML model: 'myModellingProcess::RAIDiator::RAID5' -  (Class)" />
+  <Message Timestamp="2015-04-17T18:41:40" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'myModellingProcess::RAIDiator::RAID5::calcUsableDiskSpace' -  (Operation)" />
+  <Message Timestamp="2015-04-17T18:41:40" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'myModellingProcess::RAIDiator::RAID5::calcUsableDiskSpace::numberOfDisks' -  (Parameter)" />
+  <Message Timestamp="2015-04-17T18:41:40" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'myModellingProcess::RAIDiator::RAID5::calcUsableDiskSpace::sizeOfSingleDisk' -  (Parameter)" />
+  <Message Timestamp="2015-04-17T18:41:40" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'myModellingProcess::RAIDiator::RAID5::RAID5' -  (Operation)" />
+  <Message Timestamp="2015-04-17T18:41:40" Importance="Medium" Text="Element reverse engineered into the UML model: 'myModellingProcess::RAIDiator::RAID6' -  (Class)" />
+  <Message Timestamp="2015-04-17T18:41:40" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'myModellingProcess::RAIDiator::RAID6::calcUsableDiskSpace' -  (Operation)" />
+  <Message Timestamp="2015-04-17T18:41:40" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'myModellingProcess::RAIDiator::RAID6::calcUsableDiskSpace::numberOfDisks' -  (Parameter)" />
+  <Message Timestamp="2015-04-17T18:41:40" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'myModellingProcess::RAIDiator::RAID6::calcUsableDiskSpace::sizeOfSingleDisk' -  (Parameter)" />
+  <Message Timestamp="2015-04-17T18:41:40" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'myModellingProcess::RAIDiator::RAID6::RAID6' -  (Operation)" />
+  <Message Timestamp="2015-04-17T18:41:40" Importance="Medium" Text="Element reverse engineered into the UML model: 'myModellingProcess::RAIDiator::RAIDLevel' -  (Class)" />
+  <Message Timestamp="2015-04-17T18:41:40" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'myModellingProcess::RAIDiator::RAIDLevel::calcUnusableDiskSpace' -  (Operation)" />
+  <Message Timestamp="2015-04-17T18:41:40" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'myModellingProcess::RAIDiator::RAIDLevel::calcUnusableDiskSpace::numberOfDisks' -  (Parameter)" />
+  <Message Timestamp="2015-04-17T18:41:40" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'myModellingProcess::RAIDiator::RAIDLevel::calcUnusableDiskSpace::sizeOfSingleDisk' -  (Parameter)" />
+  <Message Timestamp="2015-04-17T18:41:40" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'myModellingProcess::RAIDiator::RAIDLevel::calcUsableDiskSpace' -  (Operation)" />
+  <Message Timestamp="2015-04-17T18:41:40" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'myModellingProcess::RAIDiator::RAIDLevel::calcUsableDiskSpace::numberOfDisks' -  (Parameter)" />
+  <Message Timestamp="2015-04-17T18:41:40" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'myModellingProcess::RAIDiator::RAIDLevel::calcUsableDiskSpace::sizeOfSingleDisk' -  (Parameter)" />
+  <Message Timestamp="2015-04-17T18:41:40" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'myModellingProcess::RAIDiator::RAIDLevel::initAllRAIDLevels' -  (Operation)" />
+  <Message Timestamp="2015-04-17T18:41:40" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'myModellingProcess::RAIDiator::RAIDLevel::minHDD' -  (Property)" />
+  <Message Timestamp="2015-04-17T18:41:40" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'myModellingProcess::RAIDiator::RAIDLevel::MinHDD' -  (Property)" />
+  <Message Timestamp="2015-04-17T18:41:40" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'myModellingProcess::RAIDiator::RAIDLevel::name' -  (Property)" />
+  <Message Timestamp="2015-04-17T18:41:40" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'myModellingProcess::RAIDiator::RAIDLevel::Name' -  (Property)" />
+  <Message Timestamp="2015-04-17T18:41:40" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'myModellingProcess::RAIDiator::RAIDLevel::RAIDLevel' -  (Operation)" />
+  <Message Timestamp="2015-04-17T18:41:40" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'myModellingProcess::RAIDiator::RAIDLevel::RAIDLevels' -  (Property)" />
+  <Message Timestamp="2015-04-17T18:41:40" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'myModellingProcess::RAIDiator::RAIDLevel::ToString' -  (Operation)" />
+  <Message Timestamp="2015-04-17T18:41:40" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'myModellingProcess::System' -  (Package)" />
+  <Message Timestamp="2015-04-17T18:41:40" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'myModellingProcess::System::Collections' -  (Package)" />
+  <Message Timestamp="2015-04-17T18:41:40" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'myModellingProcess::System::Collections::Generic' -  (Package)" />
+  <Message Timestamp="2015-04-17T18:41:40" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'myModellingProcess::System::Collections::Generic::List' -  (Class)   (partially reverse engineered - definition not updated) " />
+  <Message Timestamp="2015-04-17T18:41:40" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'myModellingProcess::System::Collections::Generic::List&lt;RAIDLevel‎&gt;' -  (Class)   (partially reverse engineered - definition not updated) " />
+  <Message Timestamp="2015-04-17T18:41:40" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'myModellingProcess::System::ComponentModel' -  (Package)" />
+  <Message Timestamp="2015-04-17T18:41:40" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'myModellingProcess::System::ComponentModel::IContainer' -  (Interface)   (partially reverse engineered - definition not updated) " />
+  <Message Timestamp="2015-04-17T18:41:40" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'myModellingProcess::System::Double' -  (Class)   (partially reverse engineered - definition not updated) " />
+  <Message Timestamp="2015-04-17T18:41:40" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'myModellingProcess::System::EventArgs' -  (Class)   (partially reverse engineered - definition not updated) " />
+  <Message Timestamp="2015-04-17T18:41:40" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'myModellingProcess::System::Object' -  (Class)   (partially reverse engineered - definition not updated) " />
+  <Message Timestamp="2015-04-17T18:41:40" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'myModellingProcess::System::Windows' -  (Package)" />
+  <Message Timestamp="2015-04-17T18:41:40" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'myModellingProcess::System::Windows::Forms' -  (Package)" />
+  <Message Timestamp="2015-04-17T18:41:40" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'myModellingProcess::System::Windows::Forms::Button' -  (Class)   (partially reverse engineered - definition not updated) " />
+  <Message Timestamp="2015-04-17T18:41:40" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'myModellingProcess::System::Windows::Forms::ComboBox' -  (Class)   (partially reverse engineered - definition not updated) " />
+  <Message Timestamp="2015-04-17T18:41:40" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'myModellingProcess::System::Windows::Forms::DataVisualization' -  (Package)" />
+  <Message Timestamp="2015-04-17T18:41:40" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'myModellingProcess::System::Windows::Forms::DataVisualization::Charting' -  (Package)" />
+  <Message Timestamp="2015-04-17T18:41:40" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'myModellingProcess::System::Windows::Forms::DataVisualization::Charting::Chart' -  (Class)   (partially reverse engineered - definition not updated) " />
+  <Message Timestamp="2015-04-17T18:41:40" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'myModellingProcess::System::Windows::Forms::Form' -  (Class)   (partially reverse engineered - definition not updated) " />
+  <Message Timestamp="2015-04-17T18:41:40" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'myModellingProcess::System::Windows::Forms::Label' -  (Class)   (partially reverse engineered - definition not updated) " />
+  <Message Timestamp="2015-04-17T18:41:40" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'myModellingProcess::System::Windows::Forms::NumericUpDown' -  (Class)   (partially reverse engineered - definition not updated) " />
+  <Message Timestamp="2015-04-17T18:41:40" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'myModellingProcess::System::Windows::Forms::PictureBox' -  (Class)   (partially reverse engineered - definition not updated) " />
+  <Message Timestamp="2015-04-17T18:41:40" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'myModellingProcess::System::Windows::Forms::TableLayoutPanel' -  (Class)   (partially reverse engineered - definition not updated) " />
+  <Message Timestamp="2015-04-17T18:41:40" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'myModellingProcess::System::Windows::Forms::TextBox' -  (Class)   (partially reverse engineered - definition not updated) " />
+  <Message Timestamp="2015-04-17T18:41:40" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'String' -  (PrimitiveType)" />
+  <Message Timestamp="2015-04-17T18:41:40" Importance="Diagnostic" Text="Relationship reverse engineered into the UML model: myModellingProcess::RAIDiator::AboutBox1 to myModellingProcess::System::Windows::Forms::Form (Generalization)" />
+  <Message Timestamp="2015-04-17T18:41:40" Importance="Diagnostic" Text="Relationship reverse engineered into the UML model: myModellingProcess::RAIDiator::Form1 to myModellingProcess::System::Windows::Forms::Form (Generalization)" />
+  <Message Timestamp="2015-04-17T18:41:40" Importance="Diagnostic" Text="Relationship reverse engineered into the UML model: myModellingProcess::RAIDiator::RAID0 to myModellingProcess::RAIDiator::RAIDLevel (Generalization)" />
+  <Message Timestamp="2015-04-17T18:41:40" Importance="Diagnostic" Text="Relationship reverse engineered into the UML model: myModellingProcess::RAIDiator::RAID1 to myModellingProcess::RAIDiator::RAIDLevel (Generalization)" />
+  <Message Timestamp="2015-04-17T18:41:40" Importance="Diagnostic" Text="Relationship reverse engineered into the UML model: myModellingProcess::RAIDiator::RAID10 to myModellingProcess::RAIDiator::RAIDLevel (Generalization)" />
+  <Message Timestamp="2015-04-17T18:41:40" Importance="Diagnostic" Text="Relationship reverse engineered into the UML model: myModellingProcess::RAIDiator::RAID3 to myModellingProcess::RAIDiator::RAIDLevel (Generalization)" />
+  <Message Timestamp="2015-04-17T18:41:40" Importance="Diagnostic" Text="Relationship reverse engineered into the UML model: myModellingProcess::RAIDiator::RAID5 to myModellingProcess::RAIDiator::RAIDLevel (Generalization)" />
+  <Message Timestamp="2015-04-17T18:41:40" Importance="Diagnostic" Text="Relationship reverse engineered into the UML model: myModellingProcess::RAIDiator::RAID6 to myModellingProcess::RAIDiator::RAIDLevel (Generalization)" />
+  <Message Timestamp="2015-04-17T18:41:40" Importance="High" Text="(10) type(s) fully reverse engineered." />
+  <Message Timestamp="2015-04-17T18:41:40" Importance="High" Text="(15) type(s) partially reverse engineered.  These types were not included in the original selection so their full definitions are not reverse engineered.  Instead, this shallow operation has simply ensured these types exist in the UML model because they are needed in order to fully describe other elements." />
+  <Message Timestamp="2015-04-17T18:41:40" Importance="High" Text="The reverse engineering operation completed with (0) error(s), and (0) warning(s)." />
+</Log>

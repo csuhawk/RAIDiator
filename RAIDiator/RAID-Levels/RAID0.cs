@@ -11,7 +11,6 @@ namespace RAIDiator
         public RAID0()
         {
             minHDD = 2;
-            name = "RAID-0";
         }
        
        override public double calcUsableDiskSpace(int numberOfDisks, double sizeOfSingleDisk)

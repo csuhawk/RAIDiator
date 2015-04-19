@@ -26,7 +26,7 @@ namespace RAIDiator
             }  
 
             // Set Default Raid Level0
-            cmbRAIDLevels.SelectedItem = RAIDLevel.RAIDLevels.Find(item => item.Name == "RAID-0");
+            cmbRAIDLevels.SelectedItem = RAIDLevel.RAIDLevels.Find(item => item.ToString() == "RAID-0");
  
         }
 
@@ -72,7 +72,7 @@ namespace RAIDiator
             }
 
             // Sets required Disks and current value of cmbox to the same number
-            minHDD = RAIDLevel.RAIDLevels.Find(item => item.Name == rlevelName).MinHDD;
+            minHDD = RAIDLevel.RAIDLevels.Find(item => item.ToString() == rlevelName).MinHDD;
 
             // Sets minimal HDD 
             numUpDoNumberOfDisks.Minimum = minHDD;
@@ -93,9 +93,9 @@ namespace RAIDiator
             {
                 String currentRAIDLevel = cmbRAIDLevels.SelectedItem.ToString();
                 // Calc Space
-                RAIDLevel rlevel = RAIDLevel.RAIDLevels.Find(item => item.Name == currentRAIDLevel);
-                txtUsableSpace.Text = rlevel.calcUsableDiskSpace(Convert.ToInt16(numUpDoNumberOfDisks.Value), Convert.ToDouble(numUpDoDiskSize.Value)).ToString();
-                txtUnusableSpace.Text = rlevel.calcUnusableDiskSpace(Convert.ToInt16(numUpDoNumberOfDisks.Value), Convert.ToDouble(numUpDoDiskSize.Value)).ToString();
+                RAIDLevel rlevel = RAIDLevel.RAIDLevels.Find(item => item.ToString() == currentRAIDLevel);
+                txtUsableSpace.Text = rlevel.calcUsableDiskSpace(Convert.ToInt32(numUpDoNumberOfDisks.Value), Convert.ToDouble(numUpDoDiskSize.Value)).ToString();
+                txtUnusableSpace.Text = rlevel.calcUnusableDiskSpace(Convert.ToInt32(numUpDoNumberOfDisks.Value), Convert.ToDouble(numUpDoDiskSize.Value)).ToString();
                 // Generate ChartData
                 Series ser = SpaceChart.Series.FindByName("UsedVSUnusedSpace");
                 ser.Points.Clear();                       // clear DataPoints

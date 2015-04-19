@@ -29,18 +29,6 @@ namespace RAIDiator
         /// </summary>
         protected int minHDD;
 
-        /// <summary>
-        /// Name of the RAID-Level
-        /// </summary>
-        protected String name;
-
-        /// <summary>
-        /// Name of the RAID-Level
-        /// </summary>
-        public String Name
-        {
-            get { return name; }
-        }
 
         /// <summary>
         /// Minimal number of HDDs
@@ -67,7 +55,7 @@ namespace RAIDiator
         /// <returns>name</returns>
         public override string ToString()
         {
-            return name;
+            return this.GetType().Name;
         }
 
         static public void initAllRAIDLevels()

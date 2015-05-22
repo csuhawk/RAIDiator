@@ -12,3 +12,17 @@ D:\Project_Data\RAIDiator\RAIDiator\obj\Release\RAIDiator.AboutBox1.resources
 D:\Project_Data\RAIDiator\RAIDiator\obj\Release\RAIDiator.exe.manifest
 D:\Project_Data\RAIDiator\RAIDiator\obj\Release\RAIDiator.application
 D:\Project_Data\RAIDiator\RAIDiator\obj\Release\RAIDiator.csprojResolveAssemblyReference.cache
+P:\Project_Data\RAIDiator\RAIDiator\bin\Release\RAIDiator.exe.config
+P:\Project_Data\RAIDiator\RAIDiator\obj\Release\RAIDiator.pdb
+P:\Project_Data\RAIDiator\RAIDiator\bin\Release\RAIDiator.exe.manifest
+P:\Project_Data\RAIDiator\RAIDiator\bin\Release\RAIDiator.application
+P:\Project_Data\RAIDiator\RAIDiator\bin\Release\RAIDiator.exe
+P:\Project_Data\RAIDiator\RAIDiator\bin\Release\RAIDiator.pdb
+P:\Project_Data\RAIDiator\RAIDiator\obj\Release\RAIDiator.csprojResolveAssemblyReference.cache
+P:\Project_Data\RAIDiator\RAIDiator\obj\Release\RAIDiator.AboutBox1.resources
+P:\Project_Data\RAIDiator\RAIDiator\obj\Release\RAIDiator.Form1.resources
+P:\Project_Data\RAIDiator\RAIDiator\obj\Release\RAIDiator.Properties.Resources.resources
+P:\Project_Data\RAIDiator\RAIDiator\obj\Release\RAIDiator.csproj.GenerateResource.Cache
+P:\Project_Data\RAIDiator\RAIDiator\obj\Release\RAIDiator.exe.manifest
+P:\Project_Data\RAIDiator\RAIDiator\obj\Release\RAIDiator.application
+P:\Project_Data\RAIDiator\RAIDiator\obj\Release\RAIDiator.exe

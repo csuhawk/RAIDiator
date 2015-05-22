@@ -26,7 +26,7 @@ namespace RAIDiator
             }  
 
             // Set Default Raid Level0
-            cmbRAIDLevels.SelectedItem = RAIDLevel.RAIDLevels.Find(item => item.ToString() == "RAID-0");
+            cmbRAIDLevels.SelectedItem = RAIDLevel.RAIDLevels.Find(item => item.ToString() == "RAID0");
  
         }
 
@@ -40,32 +40,32 @@ namespace RAIDiator
                 default:
                     break;
 
-                case "RAID-0":
+                case "RAID0":
                     // Sets Image of RAID Level
                     pBoxRAIDLevel.Image = RAIDiator.Properties.Resources.RAID0;
                     break;
 
-                case "RAID-1":
+                case "RAID1":
                     // Sets Image of RAID Level
                     pBoxRAIDLevel.Image = RAIDiator.Properties.Resources.RAID1;
                     break;
 
-                case "RAID-3":
+                case "RAID3":
                     // Sets Image of RAID Level
                     pBoxRAIDLevel.Image = RAIDiator.Properties.Resources.RAID3;
                     break;
 
-                case "RAID-5":
+                case "RAID5":
                     // Sets Image of RAID Level
                     pBoxRAIDLevel.Image = RAIDiator.Properties.Resources.RAID5;
                     break;
 
-                case "RAID-6":
+                case "RAID6":
                     // Sets Image of RAID Level
                     pBoxRAIDLevel.Image = RAIDiator.Properties.Resources.RAID6;
                     break;
 
-                case "RAID-10":
+                case "RAID10":
                     // Sets Image of RAID Level
                     pBoxRAIDLevel.Image = RAIDiator.Properties.Resources.RAID10;
                     break;
